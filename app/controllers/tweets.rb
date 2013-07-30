@@ -9,6 +9,7 @@ get '/tweet' do
 end
 
 post '/tweet' do
+	p params
 	user = current_user
  	user.twitter_client.update(params[:tweet][:text])
   redirect "/tweet"
