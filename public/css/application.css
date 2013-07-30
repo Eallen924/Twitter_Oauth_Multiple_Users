@@ -2,13 +2,12 @@ body {
 	background-color: rgb(164,205,251);
 }
 .container {
-	/*position: relative;*/
-	/*top: -45px;*/
-  margin: 20px auto;
-  width: 522px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
   height: 300px;
 	overflow: scroll;
-  /*overflow: hidden;*/
   padding: 20px 20px 20px 20px;
   border: 1px dotted black;
   border-radius: 5px;
@@ -25,7 +24,6 @@ body {
 	left: 0px;
 	z-index: 100;
 	box-shadow: 0px 0px 70px px rgb(202,204,206) inset;
-	/*background: linear-gradient(0deg, rgb(202,204,206), transparent 50px);*/
 }
 
 button a {
@@ -100,10 +98,40 @@ input {
 }
 
 #tweet_submit_button {
-	border-radius: 4px;
+	/*border-radius: 4px;*/
+  background-color:#3498db;
+  border:none;
+  border-radius: 5px;
+  color:white;
 }
 
 #tweet_textarea {
 	border-radius: 5px;
 	margin: 10px auto;
+}
+
+header{
+  top:0px;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  background-color: #3498db;
+}
+
+header a {
+  display: inline-block;
+  float:left; 
+  padding:15px;
+  text-decoration: none;
+  color: white;
+}
+
+.logout {
+  display: inline-block;
+  float:right;
+  margin-right: 30px;
+}
+
+input.button{
 }
