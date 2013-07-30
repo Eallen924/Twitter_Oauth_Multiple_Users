@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Tweet Now! 2: Multi-User</h1>
+
+
+  <% if @access_token %>
+    <div>
+      <p>
+        Login Successful!
+      </p>
+      <p>
+        <button><a href="/sign_out">Sign Out</a></button><br>
+        <button><a href="/tweet">Tweet!</a></button><br>
+      </p>
+    </div>
+  <% else %>
+    <button><a href="/sign_in">Sign In with Twitter</a></button>
+  <% end %>
+
+</div>

@@ -1,0 +1,11 @@
+<% if @error %>
+<%= @error %>
+<% else %>
+	<% @tweets.each do|tweet|  %>
+<div class="tweet_container">
+ <div id="tweet_pic"><img src="<%= tweet.user.profile_image_url %>"></div>
+ <div id="tweet_username">@<%= tweet.user.username %></div>
+ <div id="tweet_body"><%= tweet.text %></div>
+</div>
+	<% end %>
+<% end %>
