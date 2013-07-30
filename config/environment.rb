@@ -23,8 +23,8 @@ require 'erb'
 require 'oauth'
 require 'twitter'
 
-require 'pry'
-require 'ap'
+require 'pry' if development?
+require 'ap' if development?
 
 # Some helper constants for path-centric logic
 APP_ROOT = Pathname.new(File.expand_path('../../', __FILE__))
