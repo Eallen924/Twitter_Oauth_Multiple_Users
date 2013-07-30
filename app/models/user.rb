@@ -25,6 +25,3 @@ class User < ActiveRecord::Base
     end
   end
 end
-
-# user = user.find(10)
-# user.twitter_client.update('Weeeeeeeeee...')
