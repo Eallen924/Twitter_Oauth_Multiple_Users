@@ -11,7 +11,7 @@ gem 'sinatra'
 gem 'thin'
 
 gem 'activesupport'
-gem 'activerecord'
+gem 'activerecord', '~> 3.2.0'
 
 gem 'rake'
 
@@ -20,9 +20,9 @@ gem 'shotgun'
 gem 'oauth'
 gem 'twitter'
 
-gem 'pry'
 
-group :test do
+group :test, :development do
+	gem 'pry'
   gem 'faker'
   gem 'rspec'
   gem 'awesome_print'
