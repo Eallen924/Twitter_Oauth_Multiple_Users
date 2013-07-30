@@ -18,26 +18,11 @@
   <title></title>
 </head>
 <header>
-  <a class="nav_title" href='/'>Eric's Skeleton</a>
+  <a class="nav_title" href='/'>Twitter Oauth</a>
   <% if current_user %>
-      <button><a href="/sign_out">Sign Out</a></button><br>
-      <button><a href="/tweet">Tweet!</a></button><br>
-  <% else %>
-  <div class="login">
-    <a id="" href="/user/create">Join</a>
-    <form class="login" action="/login" method="post">
-      <input type="text" name="user[username]" placeholder="Username">
-      <input type="password" name="user[password]" placeholder="Password">
-      <input  class="button" type="submit" value="Login">
-    </form>
-  </div>
-  <% end %>
+  <a class="logout" href="/logout">Logout</a>
 </header>
 <body>
-  <% if current_user %>
-  <div>
-  
-  </div>
   <% else %>
   <button><a href="/sign_in">Sign In with Twitter</a></button>
   <% end %> 
