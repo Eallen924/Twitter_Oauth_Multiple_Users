@@ -6,7 +6,7 @@ get '/sign_in' do
   redirect request_token.authorize_url
 end
 
-get '/sign_out' do
+get '/logout' do
   session.clear
   redirect '/'
 end
