@@ -20,5 +20,6 @@ get '/auth' do
 
   session.delete(:request_token)
   session[:user_id] =  @user.id
-  erb :index
+  redirect '/tweet'
+  # erb :index
 end
